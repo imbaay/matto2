@@ -57,7 +57,6 @@
                                     </td>
                                     <td>{{$review->id}}</td>
                                     <td>{{$review->user->name}}</td>
-                                    <td><img src="{{$review->phone->image_url}}" width="60" alt=""></td>
                                     <td>{{str_limit($review->body, 200)}}</td>
                                     <td>{{$review->created_at->diffForHumans()}}</td>
                                 </tr>

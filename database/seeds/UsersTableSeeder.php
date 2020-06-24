@@ -18,30 +18,30 @@ class UsersTableSeeder extends Seeder
         // insert 3 users
         DB::table('users')->insert([
             [
-                'name'=>'Tahmid Nishat',
-                'email'=>'tahmid.ni7@gmail.com',
-                'password'=> bcrypt('12345'),
+                'name'=>'Nguyễn Quỳnh Trang',
+                'email'=>'trang@gmail.com',
+                'password'=> bcrypt('123456'),
                 'role_id'=> 1,
                 'is_active'=> 1
             ],
             [
-                'name' => 'Mr. Admin',
-                'email' => 'admin@bookshop.com',
-                'password'=> bcrypt('secret'),
+                'name' => 'Trang Xinh Gái',
+                'email' => 'admin@admin.com',
+                'password'=> bcrypt('123456'),
                 'role_id'=> 1,
                 'is_active'=> 1
             ],
             [
-                'name'=> 'Mr. User',
-                'email'=> 'user@bookshop.com',
-                'password'=> bcrypt('secret'),
+                'name'=> 'Tiến Đẹp Trai',
+                'email'=> 'tien@phoneshop.com',
+                'password'=> bcrypt('123456'),
                 'role_id'=> 3,
                 'is_active'=> 1
             ],
             [
-                'name'=> 'Mr. Editor',
-                'email'=> 'editor@bookshop.com',
-                'password'=> bcrypt('secret'),
+                'name'=> 'Trang Ngáo Ngơ',
+                'email'=> 'master@phoneshop.com',
+                'password'=> bcrypt('123456'),
                 'role_id'=> 2,
                 'is_active'=> 1
             ],

@@ -13,13 +13,13 @@ class PhoneshopHomeController extends Controller
     {
         # Home page Phones
         $iphones = Phone::with('category')->whereHas('category', function($query) {
-            $query->where('slug', 'engineering'); })
+            $query->where('slug', 'iphone'); })
             ->take(8)
             ->latestFirst()
             ->get();
         $samsungs = Phone::with('category', 'nation', 'image')
             ->whereHas('category', function ($query){
-                $query->where('slug', 'literature'); })
+                $query->where('slug', 'samsung'); })
             ->take(4)
             ->latestFirst()
             ->get();

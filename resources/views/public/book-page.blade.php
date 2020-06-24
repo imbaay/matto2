@@ -27,7 +27,7 @@
                                 @endif
                                 @if(isset($nationName))
                                     <div class="alert alert-info m-3">
-                                        Writer <strong>{{$nationName}}</strong>
+                                        Sản phẩm của <strong>{{$nationName}}</strong>
                                     </div>
                                 @endif
                                 @if(isset($discountTitle))
@@ -50,7 +50,7 @@
                                                         <a href="{{route('phone-details', $phone->id)}}">{{str_limit($phone->title, 30)}}</a>
                                                     </div>
                                                     <div class="book-author mb-2">
-                                                        <small>By <a href="{{route('nation', $phone->nation->slug)}}">{{$phone->nation->name}}</a></small>
+                                                        <small>Made in <a href="{{route('nation', $phone->nation->slug)}}">{{$phone->nation->name}}</a></small>
                                                     </div>
                                                     <div class="pbook-price mb-3">
                                                         @if($phone->discount_rate)

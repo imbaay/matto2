@@ -25,7 +25,7 @@ Phoneshop - Phone details
                                             <h5>{{$phone->title}}</h5>
                                         </div>
                                         <div class="author mb-2">
-                                            By <a href="{{route('nation', $phone->nation->slug)}}">{{$phone->nation->name}}</a>
+                                            Made in <a href="{{route('nation', $phone->nation->slug)}}">{{$phone->nation->name}}</a>
                                         </div>
                                         @if(($phone->quantity) > 1)
                                             <div class="badge badge-success mb-2">In Stock</div>
